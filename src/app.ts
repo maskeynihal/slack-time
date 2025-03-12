@@ -21,7 +21,6 @@ const expressReceiver = new ExpressReceiver({
 // Initialize your slack app
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
-  logLevel: LogLevel.DEBUG,
   signingSecret: process.env.SLACK_SIGNING_SECRET,
   receiver: expressReceiver,
 });
