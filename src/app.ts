@@ -77,8 +77,8 @@ app.command("/time", async ({ command, ack, respond, client }) => {
     // Convert to target timezone
     const targetDate = senderDate.tz(targetTimezone);
 
-    const senderDateTime = senderDate.format("MMM D YYYY HH:mm");
-    const targetDateTime = targetDate.format("MMM D YYYY HH:mm");
+    const senderDateTime = senderDate.format("MMM D YYYY, HH:mm");
+    const targetDateTime = targetDate.format("MMM D YYYY, HH:mm");
 
     // Calculate timezone offset difference
     const senderOffset = senderDate.utcOffset();
